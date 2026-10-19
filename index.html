@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>История, культура, современность</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --white: #FFFFFF;
+            --red: #C8102E;
+            --green: #007A3D;
+            --dark-gray: #2D2D2D;
+            --light-gray: #F5F5F5;
+            --border-gray: #E0E0E0;
+            --shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            --transition: all 0.3s ease;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Roboto', 'Open Sans', sans-serif;
+            background-color: var(--white);
+            color: var(--dark-gray);
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        a { text-decoration: none; color: inherit; transition: var(--transition); }
+        ul { list-style: none; }
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* ===== ОРНАМЕНТ ===== */
+        .ornament-strip {
+            width: 100%;
+            height: 28px;
+            background-color: var(--red);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='28' viewBox='0 0 56 28'%3E%3Cg fill='%23FFFFFF'%3E%3Crect x='0' y='0' width='4' height='4'/%3E%3Crect x='8' y='0' width='4' height='4'/%3E%3Crect x='16' y='0' width='4' height='4'/%3E%3Crect x='24' y='0' width='4' height='4'/%3E%3Crect x='32' y='0' width='4' height='4'/%3E%3Crect x='40' y='0' width='4' height='4'/%3E%3Crect x='48' y='0' width='4' height='4'/%3E%3Crect x='4' y='4' width='4' height='4'/%3E%3Crect x='12' y='4' width='4' height='4'/%3E%3Crect x='20' y='4' width='4' height='4'/%3E%3Crect x='28' y='4' width='4' height='4'/%3E%3Crect x='36' y='4' width='4' height='4'/%3E%3Crect x='44' y='4' width='4' height='4'/%3E%3Crect x='52' y='4' width='4' height='4'/%3E%3Crect x='0' y='8' width='4' height='4'/%3E%3Crect x='8' y='8' width='4' height='4'/%3E%3Crect x='16' y='8' width='4' height='4'/%3E%3Crect x='24' y='8' width='4' height='4'/%3E%3Crect x='32' y='8' width='4' height='4'/%3E%3Crect x='40' y='8' width='4' height='4'/%3E%3Crect x='48' y='8' width='4' height='4'/%3E%3Crect x='4' y='12' width='4' height='4'/%3E%3Crect x='12' y='12' width='4' height='4'/%3E%3Crect x='20' y='12' width='4' height='4'/%3E%3Crect x='28' y='12' width='4' height='4'/%3E%3Crect x='36' y='12' width='4' height='4'/%3E%3Crect x='44' y='12' width='4' height='4'/%3E%3Crect x='52' y='12' width='4' height='4'/%3E%3Crect x='0' y='16' width='4' height='4'/%3E%3Crect x='8' y='16' width='4' height='4'/%3E%3Crect x='16' y='16' width='4' height='4'/%3E%3Crect x='24' y='16' width='4' height='4'/%3E%3Crect x='32' y='16' width='4' height='4'/%3E%3Crect x='40' y='16' width='4' height='4'/%3E%3Crect x='48' y='16' width='4' height='4'/%3E%3Crect x='4' y='20' width='4' height='4'/%3E%3Crect x='12' y='20' width='4' height='4'/%3E%3Crect x='20' y='20' width='4' height='4'/%3E%3Crect x='28' y='20' width='4' height='4'/%3E%3Crect x='36' y='20' width='4' height='4'/%3E%3Crect x='44' y='20' width='4' height='4'/%3E%3Crect x='52' y='20' width='4' height='4'/%3E%3Crect x='0' y='24' width='4' height='4'/%3E%3Crect x='8' y='24' width='4' height='4'/%3E%3Crect x='16' y='24' width='4' height='4'/%3E%3Crect x='24' y='24' width='4' height='4'/%3E%3Crect x='32' y='24' width='4' height='4'/%3E%3Crect x='40' y='24' width='4' height='4'/%3E%3Crect x='48' y='24' width='4' height='4'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            background-size: 56px 28px;
+        }
+
+        .ornament-strip.thin {
+            height: 16px;
+            background-size: 32px 16px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='16' viewBox='0 0 32 16'%3E%3Cg fill='%23C8102E'%3E%3Crect x='0' y='0' width='2' height='2'/%3E%3Crect x='4' y='0' width='2' height='2'/%3E%3Crect x='8' y='0' width='2' height='2'/%3E%3Crect x='12' y='0' width='2' height='2'/%3E%3Crect x='16' y='0' width='2' height='2'/%3E%3Crect x='20' y='0' width='2' height='2'/%3E%3Crect x='24' y='0' width='2' height='2'/%3E%3Crect x='28' y='0' width='2' height='2'/%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='6' y='2' width='2' height='2'/%3E%3Crect x='10' y='2' width='2' height='2'/%3E%3Crect x='14' y='2' width='2' height='2'/%3E%3Crect x='18' y='2' width='2' height='2'/%3E%3Crect x='22' y='2' width='2' height='2'/%3E%3Crect x='26' y='2' width='2' height='2'/%3E%3Crect x='30' y='2' width='2' height='2'/%3E%3Crect x='0' y='4' width='2' height='2'/%3E%3Crect x='4' y='4' width='2' height='2'/%3E%3Crect x='8' y='4' width='2' height='2'/%3E%3Crect x='12' y='4' width='2' height='2'/%3E%3Crect x='16' y='4' width='2' height='2'/%3E%3Crect x='20' y='4' width='2' height='2'/%3E%3Crect x='24' y='4' width='2' height='2'/%3E%3Crect x='28' y='4' width='2' height='2'/%3E%3Crect x='2' y='6' width='2' height='2'/%3E%3Crect x='6' y='6' width='2' height='2'/%3E%3Crect x='10' y='6' width='2' height='2'/%3E%3Crect x='14' y='6' width='2' height='2'/%3E%3Crect x='18' y='6' width='2' height='2'/%3E%3Crect x='22' y='6' width='2' height='2'/%3E%3Crect x='26' y='6' width='2' height='2'/%3E%3Crect x='30' y='6' width='2' height='2'/%3E%3Crect x='0' y='8' width='2' height='2'/%3E%3Crect x='4' y='8' width='2' height='2'/%3E%3Crect x='8' y='8' width='2' height='2'/%3E%3Crect x='12' y='8' width='2' height='2'/%3E%3Crect x='16' y='8' width='2' height='2'/%3E%3Crect x='20' y='8' width='2' height='2'/%3E%3Crect x='24' y='8' width='2' height='2'/%3E%3Crect x='28' y='8' width='2' height='2'/%3E%3Crect x='2' y='10' width='2' height='2'/%3E%3Crect x='6' y='10' width='2' height='2'/%3E%3Crect x='10' y='10' width='2' height='2'/%3E%3Crect x='14' y='10' width='2' height='2'/%3E%3Crect x='18' y='10' width='2' height='2'/%3E%3Crect x='22' y='10' width='2' height='2'/%3E%3Crect x='26' y='10' width='2' height='2'/%3E%3Crect x='30' y='10' width='2' height='2'/%3E%3Crect x='0' y='12' width='2' height='2'/%3E%3Crect x='4' y='12' width='2' height='2'/%3E%3Crect x='8' y='12' width='2' height='2'/%3E%3Crect x='12' y='12' width='2' height='2'/%3E%3Crect x='16' y='12' width='2' height='2'/%3E%3Crect x='20' y='12' width='2' height='2'/%3E%3Crect x='24' y='12' width='2' height='2'/%3E%3Crect x='28' y='12' width='2' height='2'/%3E%3Crect x='2' y='14' width='2' height='2'/%3E%3Crect x='6' y='14' width='2' height='2'/%3E%3Crect x='10' y='14' width='2' height='2'/%3E%3Crect x='14' y='14' width='2' height='2'/%3E%3Crect x='18' y='14' width='2' height='2'/%3E%3Crect x='22' y='14' width='2' height='2'/%3E%3Crect x='26' y='14' width='2' height='2'/%3E%3Crect x='30' y='14' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        /* ===== HEADER ===== */
+        .site-header {
+            background-color: var(--white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+        }
+
+        .top-flag-bar {
+            background-color: var(--red);
+            padding: 10px 0;
+        }
+
+        .top-flag-bar .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* Плашка с флагом: белая рамка, внутри флаг с белой полосой орнамента */
+        .flag-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: var(--white);
+            border-radius: 4px;
+            padding: 6px 14px 6px 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        }
+
+        .flag-icon {
+            width: 36px;
+            height: 24px;
+            border-radius: 2px;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 1px solid rgba(0,0,0,0.06);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flag-icon .flag-top {
+            flex: 2;
+            background: var(--red);
+        }
+
+        .flag-icon .flag-ornament {
+            height: 6px;
+            background-color: var(--white);
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cg fill='%23C8102E'%3E%3Crect x='0' y='0' width='2' height='2'/%3E%3Crect x='4' y='0' width='2' height='2'/%3E%3Crect x='8' y='0' width='2' height='2'/%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='6' y='2' width='2' height='2'/%3E%3Crect x='10' y='2' width='2' height='2'/%3E%3Crect x='0' y='4' width='2' height='2'/%3E%3Crect x='4' y='4' width='2' height='2'/%3E%3Crect x='8' y='4' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+            background-repeat: repeat-x;
+            background-size: 12px 6px;
+        }
+
+        .flag-icon .flag-bottom {
+            flex: 1;
+            background: var(--green);
+        }
+
+        .flag-label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            color: var(--red);
+        }
+
+        .top-flag-bar .header-tag {
+            color: var(--white);
+            font-size: 0.82rem;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 16px 0;
+            min-height: 74px;
+        }
+
+        .nav {
+            display: flex;
+            gap: 32px;
+        }
+
+        .nav a {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background: var(--red);
+            transition: var(--transition);
+        }
+
+        .nav a:hover::after { width: 100%; }
+        .nav a:hover { color: var(--red); }
+
+        .burger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 5px;
+            padding: 8px;
+        }
+
+        .burger span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            background: var(--dark-gray);
+            border-radius: 2px;
+            transition: var(--transition);
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: linear-gradient(180deg, #FAFAFA 0%, var(--white) 100%);
+            padding: 80px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -80px; right: -80px;
+            width: 380px; height: 380px;
+            border-radius: 50%;
+            background: var(--red);
+            opacity: 0.04;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -120px; left: -100px;
+            width: 300px; height: 300px;
+            border-radius: 50%;
+            background: var(--green);
+            opacity: 0.05;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(200, 16, 46, 0.08);
+            color: var(--red);
+            font-weight: 500;
+            font-size: 0.85rem;
+            padding: 8px 16px;
+            border-radius: 40px;
+            margin-bottom: 24px;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        .hero-badge .dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--red);
+        }
+
+        .hero h1 {
+            font-size: clamp(2rem, 5vw, 3.2rem);
+            font-weight: 900;
+            line-height: 1.15;
+            color: var(--dark-gray);
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h1 .accent-red { color: var(--red); }
+        .hero h1 .accent-green { color: var(--green); }
+
+        .hero p {
+            font-size: 1.15rem;
+            color: #555;
+            max-width: 640px;
+            margin-bottom: 36px;
+        }
+
+        .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 32px;
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .btn-primary { background: var(--red); color: var(--white); border-color: var(--red); }
+        .btn-primary:hover { background: #A50D25; border-color: #A50D25; transform: translateY(-2px); box-shadow: 0 8px 20px rgba(200,16,46,0.25); }
+
+        .btn-outline { background: transparent; color: var(--green); border-color: var(--green); }
+        .btn-outline:hover { background: var(--green); color: var(--white); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(0,122,61,0.2); }
+
+        .btn svg { width: 18px; height: 18px; fill: currentColor; }
+
+        /* ===== СЕКЦИИ ===== */
+        .section { padding: 70px 0; }
+
+        .section-header {
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .section-label {
+            display: inline-block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--green);
+            margin-bottom: 12px;
+        }
+
+        .section-label::before, .section-label::after {
+            content: '—';
+            color: var(--border-gray);
+            margin: 0 8px;
+        }
+
+        .section-header h2 {
+            font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+            letter-spacing: -0.3px;
+        }
+
+        .section-header p { color: #666; font-size: 1.05rem; }
+
+        /* ===== КАРТОЧКИ ===== */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 28px;
+        }
+
+        .card {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 32px 28px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 4px;
+            background: var(--red);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: var(--transition);
+        }
+
+        .card:nth-child(even)::before { background: var(--green); }
+
+        .card:hover { transform: translateY(-6px); box-shadow: var(--shadow); border-color: transparent; }
+        .card:hover::before { transform: scaleX(1); }
+
+        .card-icon {
+            width: 56px; height: 56px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 20px;
+            background: rgba(200, 16, 46, 0.07);
+            color: var(--red);
+            flex-shrink: 0;
+        }
+
+        .card:nth-child(even) .card-icon { background: rgba(0, 122, 61, 0.07); color: var(--green); }
+        .card-icon svg { width: 28px; height: 28px; fill: currentColor; }
+
+        .card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 10px; color: var(--dark-gray); }
+
+        .card .card-subtitle {
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--red);
+            margin-bottom: 12px;
+        }
+
+        .card:nth-child(even) .card-subtitle { color: var(--green); }
+
+        .card p { font-size: 0.95rem; color: #555; flex-grow: 1; line-height: 1.6; }
+
+        /* ===== СЕКЦИЯ 2 ===== */
+        .facts-section { background: #FAFAFA; position: relative; }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            margin-bottom: 50px;
+        }
+
+        .fact-card {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 32px 24px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .fact-card:hover { border-color: var(--red); box-shadow: var(--shadow); }
+
+        .fact-number {
+            font-size: 2.6rem;
+            font-weight: 900;
+            color: var(--red);
+            line-height: 1;
+            margin-bottom: 8px;
+        }
+
+        .fact-card:nth-child(even) .fact-number { color: var(--green); }
+        .fact-label { font-size: 0.95rem; color: #555; }
+
+        .roles-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .role-item {
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            background: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            border: 1px solid var(--border-gray);
+            transition: var(--transition);
+        }
+
+        .role-item:hover { border-color: var(--green); box-shadow: var(--shadow); }
+
+        .role-marker {
+            width: 10px; height: 10px;
+            border-radius: 50%;
+            background: var(--red);
+            flex-shrink: 0;
+            margin-top: 8px;
+        }
+
+        .role-item:nth-child(even) .role-marker { background: var(--green); }
+        .role-item h4 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; color: var(--dark-gray); }
+        .role-item p { font-size: 0.92rem; color: #666; line-height: 1.55; }
+
+        /* ===== СЕКЦИЯ 3 ===== */
+        .traditions-section { position: relative; }
+
+        .traditions-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 48px;
+            align-items: center;
+        }
+
+        .traditions-text h2 {
+            font-size: clamp(1.6rem, 3vw, 2.2rem);
+            font-weight: 700;
+            margin-bottom: 20px;
+            letter-spacing: -0.3px;
+        }
+
+        .traditions-text p { color: #555; margin-bottom: 18px; font-size: 1rem; line-height: 1.7; }
+
+        .traditions-text .highlight-box {
+            background: rgba(0, 122, 61, 0.06);
+            border-left: 4px solid var(--green);
+            padding: 18px 22px;
+            border-radius: 0 6px 6px 0;
+            margin-top: 24px;
+            font-size: 0.95rem;
+            color: #444;
+            font-style: italic;
+        }
+
+        .traditions-visual {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .visual-tile {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 28px 20px;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .visual-tile:hover { transform: scale(1.03); border-color: var(--red); box-shadow: var(--shadow); }
+        .visual-tile:nth-child(2n):hover { border-color: var(--green); }
+
+        .visual-tile svg { width: 36px; height: 36px; fill: var(--red); margin-bottom: 12px; }
+        .visual-tile:nth-child(2n) svg { fill: var(--green); }
+        .visual-tile span { display: block; font-weight: 500; font-size: 0.9rem; color: var(--dark-gray); }
+
+        /* ===== ДОП. СЕКЦИЯ: ФАКТЫ ===== */
+        .extra-facts { background: #FAFAFA; }
+
+        .extra-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .extra-card {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: 24px;
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            transition: var(--transition);
+        }
+
+        .extra-card:hover { border-color: var(--red); box-shadow: var(--shadow); }
+
+        .extra-num {
+            font-size: 1.6rem;
+            font-weight: 900;
+            color: var(--red);
+            line-height: 1;
+            flex-shrink: 0;
+            min-width: 70px;
+        }
+
+        .extra-card:nth-child(even) .extra-num { color: var(--green); }
+        .extra-card p { font-size: 0.9rem; color: #555; line-height: 1.5; }
+
+        /* ===== FOOTER ===== */
+        .site-footer { background: var(--white); border-top: 1px solid var(--border-gray); }
+
+        .footer-content {
+            padding: 48px 0 32px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+
+        .footer-links { display: flex; gap: 64px; flex-wrap: wrap; }
+
+        .footer-col h5 {
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--dark-gray);
+            margin-bottom: 16px;
+        }
+
+        .footer-col a {
+            display: block;
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 10px;
+            transition: var(--transition);
+        }
+
+        .footer-col a:hover { color: var(--red); padding-left: 4px; }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-gray);
+            padding: 20px 0;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        /* ===== АНИМАЦИИ ===== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        /* ===== АДАПТИВНОСТЬ ===== */
+        @media (max-width: 900px) {
+            .traditions-layout { grid-template-columns: 1fr; gap: 32px; }
+
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%; left: 0; right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px 24px;
+                gap: 18px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+                border-top: 1px solid var(--border-gray);
+                z-index: 200;
+            }
+
+            .nav.open { display: flex; }
+            .burger { display: flex; }
+            .header-top { position: relative; }
+            .footer-links { gap: 40px; }
+        }
+
+        @media (max-width: 600px) {
+            .hero { padding: 56px 0 44px; }
+            .hero-buttons { flex-direction: column; align-items: stretch; }
+            .btn { justify-content: center; }
+            .section { padding: 50px 0; }
+            .cards-grid { grid-template-columns: 1fr; }
+            .facts-grid { grid-template-columns: 1fr 1fr; }
+            .footer-content { flex-direction: column; }
+            .footer-links { gap: 32px; }
+            .top-flag-bar .header-tag { display: none; }
+        }
+
+        @media (max-width: 400px) {
+            .facts-grid { grid-template-columns: 1fr; }
+            .traditions-visual { grid-template-columns: 1fr; }
+        }
+
+        a:focus-visible, button:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+    </style>
+</head>
+<body>
+
+    <!-- ===== HEADER ===== -->
+    <header class="site-header">
+        <div class="top-flag-bar">
+            <div class="container">
+                <div class="flag-badge">
+                    <span class="flag-icon" aria-hidden="true">
+                        <span class="flag-top"></span>
+                        <span class="flag-ornament"></span>
+                        <span class="flag-bottom"></span>
+                    </span>
+                    <span class="flag-label">BY</span>
+                </div>
+                <span class="header-tag">Информационный портал</span>
+            </div>
+        </div>
+
+        <div class="ornament-strip"></div>
+
+        <div class="container">
+            <div class="header-top">
+                <nav class="nav" id="nav">
+                    <a href="#history">История</a>
+                    <a href="#modern">Современность</a>
+                    <a href="#traditions">Традиции</a>
+                    <a href="#facts">Факты</a>
+                </nav>
+                <button class="burger" id="burger" aria-label="Открыть меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="dot"></span>
+                    Информационный портал
+                </div>
+                <h1>
+                    Белорусская женщина:<br>
+                    <span class="accent-red">история</span>,
+                    <span class="accent-green">культура</span>,
+                    современность
+                </h1>
+                <p>
+                    Образ белорусской женщины — это сплав вековых традиций, духовной силы и
+                    современной динамичности. От берегини домашнего очага до лидера науки и
+                    искусства — узнайте о тех, кто формирует облик страны.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#history" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        Историческое наследие
+                    </a>
+                    <a href="#modern" class="btn btn-outline">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        Современный образ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== СЕКЦИЯ 1 ===== -->
+    <section class="section" id="history">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Наследие</span>
+                <h2>Выдающиеся женщины Беларуси</h2>
+                <p>Имена, которые вошли в историю и культуру страны, вдохновляя новые поколения.</p>
+            </div>
+
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Просветительница, XII век</div>
+                    <h3>Евфросиния Полоцкая</h3>
+                    <p>Небесная покровительница Беларуси. Основательница монастырей и школ, переписчица книг, одна из первых просвещённых женщин Восточной Европы. Её крест — шедевр ювелирного искусства — стал национальным символом.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Поэтесса, XIX век</div>
+                    <h3>Франтишка Уршуля Радзивилл</h3>
+                    <p>Первая женщина-драматург Великого княжества Литовского. Организатор первого в Беларуси театра в Несвиже, автор пьес и комедий на белорусском и польском языках.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Поэтесса, XX век</div>
+                    <h3>Алоиза Пашкевич (Тётка)</h3>
+                    <p>Народная поэтесса Беларуси, одна из основоположниц белорусской литературы и национального движения. Издательница первых белорусских журналов, педагог и общественный деятель.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Врач, XX век</div>
+                    <h3>Вера Ковалёва</h3>
+                    <p>Первая белорусская женщина-врач, организатор медицинских учреждений в Минске. Внесла значительный вклад в становление системы здравоохранения республики.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Скульптор, XX век</div>
+                    <h3>Заир Азгур</h3>
+                    <p>Народный художник СССР, создатель галереи портретов выдающихся деятелей белорусской культуры. Её работы хранятся в крупнейших музеях мира.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Герой Советского Союза</div>
+                    <h3>Вера Хоружая</h3>
+                    <p>Легендарная подпольщица, участница сопротивления в годы Великой Отечественной войны. Символ мужества и самоотверженности белорусских женщин.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Писательница, XX век</div>
+                    <h3>Евгения Янищиц</h3>
+                    <p>Белорусская поэтесса, автор проникновенной лирики о родной земле, любви и памяти. Её стихи переведены на многие языки мира.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Учёный, XX век</div>
+                    <h3>Ольга Гапонова</h3>
+                    <p>Известный белорусский физиолог растений, академик. Исследования в области фотосинтеза и экологии растений получили мировое признание.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== СЕКЦИЯ 2 ===== -->
+    <section class="section facts-section" id="modern">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Современность</span>
+                <h2>Роль и достижения сегодня</h2>
+                <p>Белорусские женщины уверенно занимают ключевые позиции в науке, образовании, культуре и общественной жизни.</p>
+            </div>
+
+            <div class="facts-grid">
+                <div class="fact-card reveal">
+                    <div class="fact-number">54%</div>
+                    <div class="fact-label">женщин среди занятых в экономике</div>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-number">42%</div>
+                    <div class="fact-label">составляют женщины-исследователи в науке</div>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-number">68%</div>
+                    <div class="fact-label">педагогических работников — женщины</div>
+                </div>
+                <div class="fact-card reveal">
+                    <div class="fact-number">39%</div>
+                    <div class="fact-label">депутатов Палаты представителей</div>
+                </div>
+            </div>
+
+            <div class="roles-list">
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Наука и инновации</h4>
+                        <p>Белорусские женщины-учёные работают в области медицины, биотехнологий, IT и физики, получая международное признание.</p>
+                    </div>
+                </div>
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Образование</h4>
+                        <p>Женщины составляют большинство педагогических кадров, формируя интеллектуальный потенциал нации.</p>
+                    </div>
+                </div>
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Культура и искусство</h4>
+                        <p>Современные художницы, писательницы и музыканты продолжают традиции, обогащая белорусскую культуру новыми смыслами.</p>
+                    </div>
+                </div>
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Бизнес и управление</h4>
+                        <p>Всё больше женщин возглавляют предприятия и организации, демонстрируя эффективное лидерство.</p>
+                    </div>
+                </div>
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Медицина и здравоохранение</h4>
+                        <p>Более 80% медицинских работников в стране — женщины. Они обеспечивают доступность и качество медицинской помощи.</p>
+                    </div>
+                </div>
+                <div class="role-item reveal">
+                    <span class="role-marker"></span>
+                    <div>
+                        <h4>Спорт</h4>
+                        <p>Белорусские спортсменки завоёвывают медали на Олимпийских играх и чемпионатах мира, прославляя страну.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== СЕКЦИЯ 3 ===== -->
+    <section class="section traditions-section" id="traditions">
+        <div class="container">
+            <div class="traditions-layout">
+                <div class="traditions-text reveal">
+                    <span class="section-label">Преемственность</span>
+                    <h2>Традиции и ценности</h2>
+                    <p>
+                        Испокон веков белорусская женщина была хранительницей домашнего очага,
+                        носительницей народных традиций и обрядов. Вышивка, ткачество, гончарство
+                        и кулинарное искусство передавались от матери к дочери.
+                    </p>
+                    <p>
+                        Сегодня эти ремёсла обретают новую жизнь: мастерицы возрождают аутентичные
+                        узоры, а традиционные ценности — семья, трудолюбие, духовность — остаются
+                        прочным фундаментом национальной идентичности.
+                    </p>
+                    <div class="highlight-box">
+                        «Белорусский орнамент — это зашифрованная молитва и оберег. Каждый узор
+                        хранит память поколений».
+                    </div>
+                </div>
+
+                <div class="traditions-visual reveal">
+                    <div class="visual-tile">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Вышивка</span>
+                    </div>
+                    <div class="visual-tile">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span>Ткачество</span>
+                    </div>
+                    <div class="visual-tile">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                        <span>Гончарство</span>
+                    </div>
+                    <div class="visual-tile">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <span>Кулинария</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== ДОП. СЕКЦИЯ: ФАКТЫ ===== -->
+    <section class="section extra-facts" id="facts">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Данные</span>
+                <h2>Цифры и факты</h2>
+                <p>Статистика, которая показывает реальное положение и вклад белорусских женщин в развитие страны.</p>
+            </div>
+
+            <div class="extra-grid">
+                <div class="extra-card reveal">
+                    <div class="extra-num">4.9 млн</div>
+                    <p>женщин проживает в Беларуси — это 53,4% населения страны.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">76 лет</div>
+                    <p>средняя продолжительность жизни женщин в Беларуси.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">90%</div>
+                    <p>женщин имеют среднее специальное или высшее образование.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">1.1 млн</div>
+                    <p>семей в Беларуси, где женщины играют ключевую роль в воспитании детей.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">60%</div>
+                    <p>женщин заняты в сфере услуг и торговли.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">27</div>
+                    <p>женщин удостоены звания «Герой Беларуси» и высоких государственных наград.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">35%</div>
+                    <p>женщин среди руководителей организаций и предприятий.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">120+</div>
+                    <p>национальностей и этнических групп, среди которых белоруски сохраняют культурные традиции.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h5>Разделы</h5>
+                        <a href="#history">Историческое наследие</a>
+                        <a href="#modern">Современный образ</a>
+                        <a href="#traditions">Традиции и ценности</a>
+                        <a href="#facts">Цифры и факты</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Ресурсы</h5>
+                        <a href="#">Библиотека</a>
+                        <a href="#">Фотогалерея</a>
+                        <a href="#">Медиатека</a>
+                    </div>
+                    <div class="footer-col">
+                        <h5>Контакты</h5>
+                        <a href="#">О проекте</a>
+                        <a href="#">Обратная связь</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © 2026 История, культура, современность
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script>
+        const burger = document.getElementById('burger');
+        const nav = document.getElementById('nav');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('open');
+        });
+
+        nav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+            });
+        });
+
+        const revealElements = document.querySelectorAll('.reveal');
+
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const headerOffset = document.querySelector('.site-header').offsetHeight;
+                    const elementPosition = target.getBoundingClientRect().top + window.pageYOffset;
+                    const offsetPosition = elementPosition - headerOffset - 10;
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
