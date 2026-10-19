@@ -62,35 +62,41 @@
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         }
 
-        .top-flag-bar {
+        /* Пустая красная полоса сверху */
+        .top-red-bar {
             background-color: var(--red);
-            padding: 10px 0;
+            height: 12px;
         }
 
-        .top-flag-bar .container {
+        .header-top {
             display: flex;
             align-items: center;
             justify-content: space-between;
+            padding: 16px 0;
+            min-height: 74px;
+            position: relative;
         }
 
-        /* Плашка с флагом: белая рамка, внутри флаг с белой полосой орнамента */
+        /* Плашка с флагом в шапке */
         .flag-badge {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             background-color: var(--white);
-            border-radius: 4px;
-            padding: 6px 14px 6px 8px;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+            border-radius: 6px;
+            padding: 6px 16px 6px 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid var(--border-gray);
         }
 
+        /* Вертикальный флаг */
         .flag-icon {
-            width: 36px;
-            height: 24px;
+            width: 24px;
+            height: 36px;
             border-radius: 2px;
             overflow: hidden;
             flex-shrink: 0;
-            border: 1px solid rgba(0,0,0,0.06);
+            border: 1px solid rgba(0,0,0,0.1);
             display: flex;
             flex-direction: column;
         }
@@ -101,11 +107,11 @@
         }
 
         .flag-icon .flag-ornament {
-            height: 6px;
+            height: 8px;
             background-color: var(--white);
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='6' viewBox='0 0 12 6'%3E%3Cg fill='%23C8102E'%3E%3Crect x='0' y='0' width='2' height='2'/%3E%3Crect x='4' y='0' width='2' height='2'/%3E%3Crect x='8' y='0' width='2' height='2'/%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='6' y='2' width='2' height='2'/%3E%3Crect x='10' y='2' width='2' height='2'/%3E%3Crect x='0' y='4' width='2' height='2'/%3E%3Crect x='4' y='4' width='2' height='2'/%3E%3Crect x='8' y='4' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23C8102E'%3E%3Crect x='0' y='0' width='2' height='2'/%3E%3Crect x='4' y='0' width='2' height='2'/%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='6' y='2' width='2' height='2'/%3E%3Crect x='0' y='4' width='2' height='2'/%3E%3Crect x='4' y='4' width='2' height='2'/%3E%3Crect x='2' y='6' width='2' height='2'/%3E%3Crect x='6' y='6' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
             background-repeat: repeat-x;
-            background-size: 12px 6px;
+            background-size: 8px 8px;
         }
 
         .flag-icon .flag-bottom {
@@ -114,26 +120,11 @@
         }
 
         .flag-label {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
             font-weight: 700;
             letter-spacing: 1px;
             text-transform: uppercase;
             color: var(--red);
-        }
-
-        .top-flag-bar .header-tag {
-            color: var(--white);
-            font-size: 0.82rem;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-        }
-
-        .header-top {
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 16px 0;
-            min-height: 74px;
         }
 
         .nav {
@@ -493,7 +484,7 @@
         .visual-tile:nth-child(2n) svg { fill: var(--green); }
         .visual-tile span { display: block; font-weight: 500; font-size: 0.9rem; color: var(--dark-gray); }
 
-        /* ===== ДОП. СЕКЦИЯ: ФАКТЫ ===== */
+        /* ===== ДОП. СЕКЦИЯ ===== */
         .extra-facts { background: #FAFAFA; }
 
         .extra-grid {
@@ -595,7 +586,6 @@
 
             .nav.open { display: flex; }
             .burger { display: flex; }
-            .header-top { position: relative; }
             .footer-links { gap: 40px; }
         }
 
@@ -608,7 +598,6 @@
             .facts-grid { grid-template-columns: 1fr 1fr; }
             .footer-content { flex-direction: column; }
             .footer-links { gap: 32px; }
-            .top-flag-bar .header-tag { display: none; }
         }
 
         @media (max-width: 400px) {
@@ -623,24 +612,26 @@
 
     <!-- ===== HEADER ===== -->
     <header class="site-header">
-        <div class="top-flag-bar">
-            <div class="container">
-                <div class="flag-badge">
+        <!-- Чистая красная полоса сверху -->
+        <div class="top-red-bar"></div>
+        
+        <!-- Орнаментальная полоса -->
+        <div class="ornament-strip"></div>
+
+        <!-- Белая панель с флагом слева и меню справа -->
+        <div class="container">
+            <div class="header-top">
+                
+                <!-- Плашка с вертикальным флагом, перенесенная сюда -->
+                <a href="#" class="flag-badge" aria-label="Главная">
                     <span class="flag-icon" aria-hidden="true">
                         <span class="flag-top"></span>
                         <span class="flag-ornament"></span>
                         <span class="flag-bottom"></span>
                     </span>
                     <span class="flag-label">BY</span>
-                </div>
-                <span class="header-tag">Информационный портал</span>
-            </div>
-        </div>
+                </a>
 
-        <div class="ornament-strip"></div>
-
-        <div class="container">
-            <div class="header-top">
                 <nav class="nav" id="nav">
                     <a href="#history">История</a>
                     <a href="#modern">Современность</a>
@@ -882,7 +873,7 @@
                         <span>Вышивка</span>
                     </div>
                     <div class="visual-tile">
-                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3 <.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <span>Ткачество</span>
                     </div>
                     <div class="visual-tile">
@@ -930,7 +921,7 @@
                     <div class="extra-num">60%</div>
                     <p>женщин заняты в сфере услуг и торговли.</p>
                 </div>
-                <div class="extra-card reveal">
+               div class="extra-card reveal">
                     <div class="extra-num">27</div>
                     <p>женщин удостоены звания «Герой Беларуси» и высоких государственных наград.</p>
                 </div>
