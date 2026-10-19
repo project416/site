@@ -62,11 +62,7 @@
             box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
         }
 
-        /* Пустая красная полоса сверху */
-        .top-red-bar {
-            background-color: var(--red);
-            height: 12px;
-        }
+        .top-red-bar { background-color: var(--red); height: 12px; }
 
         .header-top {
             display: flex;
@@ -77,46 +73,18 @@
             position: relative;
         }
 
-        /* Плашка с флагом в шапке */
+        /* Плашка с эмодзи флага */
         .flag-badge {
             display: inline-flex;
             align-items: center;
-            gap: 12px;
+            gap: 10px;
             background-color: var(--white);
             border-radius: 6px;
-            padding: 6px 16px 6px 8px;
+            padding: 6px 16px 6px 12px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
             border: 1px solid var(--border-gray);
-        }
-
-        /* Вертикальный флаг */
-        .flag-icon {
-            width: 24px;
-            height: 36px;
-            border-radius: 2px;
-            overflow: hidden;
-            flex-shrink: 0;
-            border: 1px solid rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .flag-icon .flag-top {
-            flex: 2;
-            background: var(--red);
-        }
-
-        .flag-icon .flag-ornament {
-            height: 8px;
-            background-color: var(--white);
-            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Cg fill='%23C8102E'%3E%3Crect x='0' y='0' width='2' height='2'/%3E%3Crect x='4' y='0' width='2' height='2'/%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='6' y='2' width='2' height='2'/%3E%3Crect x='0' y='4' width='2' height='2'/%3E%3Crect x='4' y='4' width='2' height='2'/%3E%3Crect x='2' y='6' width='2' height='2'/%3E%3Crect x='6' y='6' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E");
-            background-repeat: repeat-x;
-            background-size: 8px 8px;
-        }
-
-        .flag-icon .flag-bottom {
-            flex: 1;
-            background: var(--green);
+            font-size: 1.6rem;
+            line-height: 1;
         }
 
         .flag-label {
@@ -127,10 +95,7 @@
             color: var(--red);
         }
 
-        .nav {
-            display: flex;
-            gap: 32px;
-        }
+        .nav { display: flex; gap: 24px; }
 
         .nav a {
             font-weight: 500;
@@ -484,8 +449,10 @@
         .visual-tile:nth-child(2n) svg { fill: var(--green); }
         .visual-tile span { display: block; font-weight: 500; font-size: 0.9rem; color: var(--dark-gray); }
 
-        /* ===== ДОП. СЕКЦИЯ ===== */
+        /* ===== ДОП. СЕКЦИИ ===== */
         .extra-facts { background: #FAFAFA; }
+        .family-section { background: var(--white); }
+        .education-section { background: #FAFAFA; }
 
         .extra-grid {
             display: grid;
@@ -612,23 +579,14 @@
 
     <!-- ===== HEADER ===== -->
     <header class="site-header">
-        <!-- Чистая красная полоса сверху -->
         <div class="top-red-bar"></div>
-        
-        <!-- Орнаментальная полоса -->
         <div class="ornament-strip"></div>
 
-        <!-- Белая панель с флагом слева и меню справа -->
         <div class="container">
             <div class="header-top">
-                
-                <!-- Плашка с вертикальным флагом, перенесенная сюда -->
+                <!-- Флаг-эмодзи -->
                 <a href="#" class="flag-badge" aria-label="Главная">
-                    <span class="flag-icon" aria-hidden="true">
-                        <span class="flag-top"></span>
-                        <span class="flag-ornament"></span>
-                        <span class="flag-bottom"></span>
-                    </span>
+                    <span aria-hidden="true">🇧🇾</span>
                     <span class="flag-label">BY</span>
                 </a>
 
@@ -637,6 +595,8 @@
                     <a href="#modern">Современность</a>
                     <a href="#traditions">Традиции</a>
                     <a href="#facts">Факты</a>
+                    <a href="#family">Семья</a>
+                    <a href="#education">Наука</a>
                 </nav>
                 <button class="burger" id="burger" aria-label="Открыть меню">
                     <span></span>
@@ -680,7 +640,7 @@
         </div>
     </section>
 
-    <!-- ===== СЕКЦИЯ 1 ===== -->
+    <!-- ===== СЕКЦИЯ 1: ИСТОРИЯ ===== -->
     <section class="section" id="history">
         <div class="container">
             <div class="section-header reveal">
@@ -703,9 +663,36 @@
                     <div class="card-icon">
                         <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
                     </div>
+                    <div class="card-subtitle">Княгиня, XII век</div>
+                    <h3>Софья Слуцкая</h3>
+                    <p>Последняя представительница княжеского рода Олельковичей. Известна своей благотворительностью и вкладом в развитие православных храмов и монастырей на белорусских землях.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Королева, XVI век</div>
+                    <h3>Барбара Радзивилл</h3>
+                    <p>Легендарная красавица из рода Радзивиллов, ставшая королевой Польши и великой княгиней Литовской. Её история любви стала символом верности и трагической судьбы.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
                     <div class="card-subtitle">Поэтесса, XIX век</div>
                     <h3>Франтишка Уршуля Радзивилл</h3>
                     <p>Первая женщина-драматург Великого княжества Литовского. Организатор первого в Беларуси театра в Несвиже, автор пьес и комедий на белорусском и польском языках.</p>
+                </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Революционерка, XIX век</div>
+                    <h3>Саломея Русецкая</h3>
+                    <p>Участница восстания 1863–1864 годов, соратница Кастуся Калиновского. Символ мужества и патриотизма белорусских женщин.</p>
                 </div>
 
                 <div class="card reveal">
@@ -761,13 +748,22 @@
                     <h3>Ольга Гапонова</h3>
                     <p>Известный белорусский физиолог растений, академик. Исследования в области фотосинтеза и экологии растений получили мировое признание.</p>
                 </div>
+
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <div class="card-subtitle">Актриса, XX век</div>
+                    <h3>Наталья Арсеньева</h3>
+                    <p>Выдающаяся белорусская актриса театра и кино, народная артистка Беларуси. Более 50 лет служила в Национальном академическом театре имени Я. Купалы.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="ornament-strip thin"></div>
 
-    <!-- ===== СЕКЦИЯ 2 ===== -->
+    <!-- ===== СЕКЦИЯ 2: СОВРЕМЕННОСТЬ ===== -->
     <section class="section facts-section" id="modern">
         <div class="container">
             <div class="section-header reveal">
@@ -844,7 +840,7 @@
 
     <div class="ornament-strip thin"></div>
 
-    <!-- ===== СЕКЦИЯ 3 ===== -->
+    <!-- ===== СЕКЦИЯ 3: ТРАДИЦИИ ===== -->
     <section class="section traditions-section" id="traditions">
         <div class="container">
             <div class="traditions-layout">
@@ -873,7 +869,7 @@
                         <span>Вышивка</span>
                     </div>
                     <div class="visual-tile">
-                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3 <.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
                         <span>Ткачество</span>
                     </div>
                     <div class="visual-tile">
@@ -891,7 +887,86 @@
 
     <div class="ornament-strip thin"></div>
 
-    <!-- ===== ДОП. СЕКЦИЯ: ФАКТЫ ===== -->
+    <!-- ===== НОВАЯ СЕКЦИЯ: СЕМЬЯ ===== -->
+    <section class="section family-section" id="family">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Ценности</span>
+                <h2>Семья и материнство</h2>
+                <p>Семья остаётся главной ценностью для белорусских женщин. Государство поддерживает материнство и детство.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08-1.29 1.94-3.5 3.22-6 3.22z"/></svg>
+                    </div>
+                    <h3>Поддержка государства</h3>
+                    <p>В Беларуси действует развитая система пособий для семей с детьми: при рождении, по уходу за ребёнком до 3 лет, а также адресная помощь малообеспеченным семьям.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
+                    <h3>Многодетные семьи</h3>
+                    <p>Более 120 тысяч многодетных семей в стране. Для них предусмотрены льготы по оплате жилищно-коммунальных услуг, бесплатный проезд и первоочередное место в детском саду.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3>Дошкольное образование</h3>
+                    <p>Почти 100% детей в возрасте от 3 до 6 лет охвачены дошкольным образованием, что позволяет женщинам совмещать работу и воспитание детей.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== НОВАЯ СЕКЦИЯ: ОБРАЗОВАНИЕ И НАУКА ===== -->
+    <section class="section education-section" id="education">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Знания</span>
+                <h2>Образование и наука</h2>
+                <p>Женщины составляют значительную часть научного и образовательного потенциала страны.</p>
+            </div>
+            <div class="cards-grid">
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+                    </div>
+                    <h3>Высшее образование</h3>
+                    <p>Более 60% студентов белорусских вузов — девушки. Они успешно осваивают как гуманитарные, так и технические специальности.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                    </div>
+                    <h3>Научные кадры</h3>
+                    <p>Среди докторов наук женщины составляют 24%, среди кандидатов наук — более 40%. Они возглавляют научные лаборатории и институты.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/></svg>
+                    </div>
+                    <h3>Международные награды</h3>
+                    <p>Белорусские женщины-учёные регулярно становятся лауреатами международных премий и грантов в области медицины, биологии и IT.</p>
+                </div>
+                <div class="card reveal">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    </div>
+                    <h3>Наставничество</h3>
+                    <p>Женщины-педагоги играют ключевую роль в воспитании подрастающего поколения, передавая знания и традиции.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="ornament-strip thin"></div>
+
+    <!-- ===== ДОП. СЕКЦИЯ: ЦИФРЫ ===== -->
     <section class="section extra-facts" id="facts">
         <div class="container">
             <div class="section-header reveal">
@@ -921,7 +996,7 @@
                     <div class="extra-num">60%</div>
                     <p>женщин заняты в сфере услуг и торговли.</p>
                 </div>
-               div class="extra-card reveal">
+                <div class="extra-card reveal">
                     <div class="extra-num">27</div>
                     <p>женщин удостоены звания «Герой Беларуси» и высоких государственных наград.</p>
                 </div>
@@ -932,6 +1007,22 @@
                 <div class="extra-card reveal">
                     <div class="extra-num">120+</div>
                     <p>национальностей и этнических групп, среди которых белоруски сохраняют культурные традиции.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">40%</div>
+                    <p>женщин среди волонтёров и участников общественных организаций.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">15</div>
+                    <p>женских общественных объединений действует в Беларуси.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">25%</div>
+                    <p>женщин среди депутатов местных советов.</p>
+                </div>
+                <div class="extra-card reveal">
+                    <div class="extra-num">80+</div>
+                    <p>женских театральных и творческих коллективов в стране.</p>
                 </div>
             </div>
         </div>
@@ -949,6 +1040,8 @@
                         <a href="#history">Историческое наследие</a>
                         <a href="#modern">Современный образ</a>
                         <a href="#traditions">Традиции и ценности</a>
+                        <a href="#family">Семья и материнство</a>
+                        <a href="#education">Образование и наука</a>
                         <a href="#facts">Цифры и факты</a>
                     </div>
                     <div class="footer-col">
